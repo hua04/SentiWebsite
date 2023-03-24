@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+h1 {
+	border: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: red;
+}
+
+p {
+	
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	color: red;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+input {
+	text-align: center;
+}
+div {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 20px 0;
+	
+}
