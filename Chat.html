@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="Sentistyle1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+   <div>
+   <form action="/answer_page.php">
+                <h1><i> What did you want to tell me?</i></h1>
+                
+       <br>
+
+                <p><textarea id="chat" name="chat" rows="4" cols="50"> </textarea></p>
+                <p><input onclick="myFunction()" type="submit" value="Tell me"></p>
+
+                <p id= "message"> </p> 
+            </form>
+       <script>
+           function myFunction(){
+           let chat = document.querySelector("#chat");
+           let message= document.querySelector("#message");
+           
+
+           message.innerHTML="Thanks for saying that to me!"
+           document.getElementById('chat').value='';
+           }
+
+           
+           </script>
+
+
+        </div>
+    <br>
+    <div>
+        <p><a href="Home.html">Tea time is Over </a><br></p>
+    </div>
+
+
+</body>
+</html> 
