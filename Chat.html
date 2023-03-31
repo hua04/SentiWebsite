@@ -10,32 +10,33 @@
 <body>
     
 
-   <div>
-   <form>
-                <h1><i> What did you want to tell me?</i></h1>
-                
-       <br>
+    <div>
+        <form onsubmit="return false">
 
-                <p><textarea id="chat" name="chat" rows="4" cols="50"> </textarea></p>
-                <p><input onclick="myFunction()" type="submit" value="Tell me"></p>
+            <h1><i> What did you want to tell me?</i></h1>
 
-                <p id= "message"> </p> 
-            </form>
-       <script>
-           function myFunction(){
-           let chat = document.querySelector("#chat");
-           let message= document.querySelector("#message");
-           
+            <br>
 
-           message.innerHTML="Thanks for saying that to me!"
-           document.getElementById('chat').value='';
-           }
+            <p><textarea id="chat" name="chat" rows="4" cols="50"> </textarea></p>
+            <p><input onclick="myFunction()" type="submit" value="Tell me"></p>
 
-           
-           </script>
+            <p id="message"> </p>
+        </form>
+        <script>
+            function myFunction() {
+                let chat = document.querySelector("#chat");
+                let message = document.querySelector("#message");
 
 
-        </div>
+                message.innerHTML = "Thanks for saying that to me!"
+                document.getElementById('chat').value = '';
+            }
+
+
+        </script>
+
+
+    </div>
     <br>
     <div>
         <p><a href="Home.html">Tea time is Over </a><br></p>
